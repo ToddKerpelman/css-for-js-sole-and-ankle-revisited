@@ -35,10 +35,10 @@ const Header = () => {
 
         <SuperHeaderButtons>
           <UnstyledButton>
-            <Icon id="search" strokeWidth={2} />
+            <Icon id="shopping-bag" strokeWidth={2} />
           </UnstyledButton>
           <UnstyledButton>
-            <Icon id="shopping-bag" strokeWidth={2} />
+            <Icon id="search" strokeWidth={2} />
           </UnstyledButton>
           <UnstyledButton onClick={() => setShowMobileMenu(true)}>
             <Icon id="menu" strokeWidth={2} />
