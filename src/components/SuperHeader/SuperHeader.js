@@ -33,6 +33,8 @@ const Wrapper = styled.div`
   padding-left: 32px;
   padding-right: 32px;
 
+  // Note: Josh hid the entire thing and moved this top border to the header.
+  // Probably a better idea
   @media ${QUERIES.tabletAndSmaller} {
     height: 4px;
 

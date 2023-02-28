@@ -34,9 +34,9 @@ const Header = () => {
         <Side />
 
         <SuperHeaderButtons>
-          <UnstyledButton>
+          <ShoppingBagButton>
             <Icon id="shopping-bag" strokeWidth={2} />
-          </UnstyledButton>
+          </ShoppingBagButton>
           <UnstyledButton>
             <Icon id="search" strokeWidth={2} />
           </UnstyledButton>
@@ -63,11 +63,13 @@ const MainHeader = styled.div`
   @media ${QUERIES.tabletAndSmaller} {
     height: 68px;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media ${QUERIES.phoneAndSmaller} {
     padding: 16px 24px;
     justify-content: space-between;
+    align-items: center;
   }
 `;
 
@@ -76,13 +78,18 @@ const SuperHeaderButtons = styled.nav`
 
   @media ${QUERIES.tabletAndSmaller} {
     display: flex;
-    gap: 40px;
+    gap: 32px;
   }
 
   @media ${QUERIES.phoneAndSmaller} {
     display: flex;
-    gap: 20px;
+    gap: 16px;
   }
+`;
+
+// Yeah, I never would have come up with this on my own.
+const ShoppingBagButton = styled(UnstyledButton)`
+  transform: translateX(-2px);
 `;
 
 const Nav = styled.nav`
