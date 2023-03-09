@@ -24,11 +24,11 @@ const Header = () => {
           <Logo />
         </Side>
         <Nav>
-          <NavLink href="/sale">Sale</NavLink>
-          <NavLink href="/new">New&nbsp;Releases</NavLink>
-          <NavLink href="/men">Men</NavLink>
-          <NavLink href="/women">Women</NavLink>
-          <NavLink href="/kids">Kids</NavLink>
+          <NavLink href="/sale">A&nbsp;Vendre</NavLink>
+          <NavLink href="/new">Novelles&nbsp;Versions</NavLink>
+          <NavLink href="/men">Hommes</NavLink>
+          <NavLink href="/women">Femmes</NavLink>
+          <NavLink href="/kids">Les&nbsp;Enfants</NavLink>
           <NavLink href="/collections">Collections</NavLink>
         </Nav>
         <Side />
@@ -94,8 +94,10 @@ const ShoppingBagButton = styled(UnstyledButton)`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
-  margin: 0px 48px;
+  gap: clamp(1rem, 7.9vw - 4rem, 2.9rem);
+  margin: 0px;
+  margin-left: 48px;
+  overflow-x: auto;
 
   @media ${QUERIES.tabletAndSmaller} {
     display: none;
