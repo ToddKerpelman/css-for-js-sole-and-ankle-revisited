@@ -6,7 +6,6 @@ import { DialogOverlay, DialogContent } from "@reach/dialog";
 import UnstyledButton from "../UnstyledButton";
 import Icon from "../Icon";
 import VisuallyHidden from "../VisuallyHidden";
-import { COLORS } from "../../constants";
 
 const MobileMenu = ({ isOpen, onDismiss }) => {
   console.log(`iSOpen is ${isOpen}`);
@@ -77,11 +76,11 @@ const DepartmentNav = styled.nav`
   & a {
     text-decoration: none;
     font-family: "Raleway";
-    font-weight: 600;
+    font-weight: var(--weight-medium);
     font-size: calc((18 / 16) * 1rem);
     text-transform: uppercase;
 
-    color: ${COLORS.gray[900]};
+    color: var(--color-gray-900);
   }
 
   & .sale {
@@ -99,9 +98,9 @@ const FooterNav = styled.nav`
     text-decoration: none;
     font-family: "Raleway";
     font-style: normal;
-    font-weight: 500;
+    font-weight: var(--weight-500);
     font-size: calc((12 / 16) * 1rem);
-    color: ${COLORS.gray[700]};
+    color: var(--color-gray-700);
   }
 `;
 
